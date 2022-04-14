@@ -187,7 +187,7 @@ void cGUI::OnSocketEvent(wxSocketEvent& event)
 			}
 			else if (cGUI::state == 2) {
 				angle = data;
-				list->AppendString(wxString::Format(wxT("Angle: %d°\n"), angle));
+				list->AppendString(wxString::Format(wxT("Angle: %dÂ°\n"), angle));
 			}
 		}
 		break;
@@ -262,7 +262,7 @@ void cGUI::OnAbout(wxCommandEvent& event)
 		"Motor control application\n"
 		"\n"
 		"Author: Samo Novak \n"
-		"Website: http://somethingsomething.com"
+		"Website: https://embeddedprojects6.wixsite.com/projects"
 
 	), "About", 0, this);
 }
